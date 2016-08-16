@@ -1,0 +1,24 @@
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer nav {
+  float: right;
+}
+
+footer nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+footer nav a:hover {
+  color: yellow;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
