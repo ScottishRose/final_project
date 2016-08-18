@@ -1,6 +1,11 @@
 .hero {
+<<<<<<< HEAD
   max-width: 100%;
   height: auto;
+  background-image: url("images/header.jpg");
+=======
+
+>>>>>>> origin/master
 }
 
 footer {
