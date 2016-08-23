@@ -1,12 +1,23 @@
-.hero {
+/*.hero {
   max-width: 100%;
   height: auto;
-  background-image: url("images/header.jpg");
+  background-image: url("../images/header.jpg");
+}
 
+h1 {
+  color: cornflowerblue;
+}
+
+img {
+  width: 375px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0 ;
 }
 
 footer {
-  background-color: black;
+  background-color: teal;
   color: white;
 }
 
@@ -21,9 +32,156 @@ footer nav a {
 }
 
 footer nav a:hover {
-  color: yellow;
+  color: cornflowerblue;
 }
 
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+*/
+
+/*
+css from other file*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Thanks to this site for the background pattern: http://lea.verou.me/css3patterns/#houndstooth;*/
+body {
+background:
+linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, #DDDDE3 75%, #DDDDE3) 0 0,
+linear-gradient(-45deg, #DDDDE3 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
+linear-gradient(45deg, #DDDDE3 17%, transparent 17%, transparent 25%, #DDDDE3 25%, #DDDDE3 36%, transparent 36%, transparent 64%, #DDDDE3 64%, #DDDDE3 75%, transparent 75%, transparent 83%, #DDDDE3 83%) 1em 1em;
+background-color: white;
+background-size: 2em 2em;
+text-align: center;
+font-family: 'Raleway', sans-serif;
+}
+.hero {
+  max-width: 100%;
+  height: auto;
+  background-image: url("../images/header.jpg");
+  margin: 0;
+  padding: 20px;
+}
+
+.hero img {
+  border: none;
+}
+
+#logo {
+  width: 300px;
+  border: none;
+}
+p {
+  color: teal;
+  padding-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: #295E9F;
+  padding-top: 15px;
+}
+a:hover {
+  font-weight: bold;
+  color: teal;
+}
+#main {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+}
+#main img {
+  float: left;
+  clear: both;
+  padding-top: 25px;
+  padding-left: 25px;
+  border: none;
+}
+#main p {
+  width: 100%;
+  float: right;
+  text-align: left;
+  clear: both;
+  color: #295E9F;
+}
+#wrap {
+  width: 550px;
+  padding: 15px;
+  display: inline-block;
+}
+#me {
+  height: 450px;
+  width: auto;
+  margin-left: 45px;
+  padding: 15px 25px;
+}
+#grid {
+  float: left;
+  border-top: 2px solid teal;
+  margin: 10px 0;
+  padding: 5px;
+
+}
+img {
+  width: 225px;
+  height: auto;
+  margin: 0 auto;
+  clear: both;
+  border: 2px solid teal;
+}
+.social {
+  border: 2px solid teal;
+  height: 50px;
+  width: 50px;
+  clear: both;
+}
+.about {
+  clear: both;
+  color: #295E9F;
+  font-weight: 600;
+  font-size: 20px;
+}
+footer {
+  border-top: 2px solid teal;
+  clear: both;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #295E9F;
+}
+footer a:hover {
+  background-color: teal;
+  border: 2px solid teal;
+}
+h4 {
+  color: #295E9F;
+  padding: 10px;
+}
+h2 {
+  padding-bottom: 15px;
+}
+.hobby {
+  margin: 15px;
+  height: 200px;
+  width: 300px;
+  padding-left: 10px;
+  padding-bottom: 25px;
+}
+.square {
+  padding-top: 15px;
+  display: inline-block;
+  clear: both;
+}
+.rectangle {
+  padding-top: 25px;
+  display: inline-block;
+  clear: both;
+}
 .clearfix:after {
   content: "";
   display: block;
