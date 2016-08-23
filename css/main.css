@@ -154,7 +154,7 @@ footer a {
   text-decoration: none;
   color: #295E9F;
 }
-footer a:hover {
+footer a img:hover {
   background-color: teal;
   border: 2px solid teal;
 }
