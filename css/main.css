@@ -51,14 +51,14 @@ css from other file*/
 }
 /*Thanks to this site for the background pattern: http://lea.verou.me/css3patterns/#houndstooth;*/
 body {
-background:
-linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, #DDDDE3 75%, #DDDDE3) 0 0,
-linear-gradient(-45deg, #DDDDE3 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
-linear-gradient(45deg, #DDDDE3 17%, transparent 17%, transparent 25%, #DDDDE3 25%, #DDDDE3 36%, transparent 36%, transparent 64%, #DDDDE3 64%, #DDDDE3 75%, transparent 75%, transparent 83%, #DDDDE3 83%) 1em 1em;
-background-color: white;
-background-size: 2em 2em;
-text-align: center;
-font-family: 'Raleway', sans-serif;
+    background:
+    linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, #DDDDE3 75%, #DDDDE3) 0 0,
+    linear-gradient(-45deg, #DDDDE3 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
+    linear-gradient(45deg, #DDDDE3 17%, transparent 17%, transparent 25%, #DDDDE3 25%, #DDDDE3 36%, transparent 36%, transparent 64%, #DDDDE3 64%, #DDDDE3 75%, transparent 75%, transparent 83%, #DDDDE3 83%) 1em 1em;
+    background-color: white;
+    background-size: 2em 2em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 .hero {
   max-width: 100%;
@@ -126,7 +126,11 @@ a:hover {
   padding: 5px;
 
 }
-img {
+header img {
+    width: 225px;
+    height: auto;
+}
+.homepage img {
   width: 225px;
   height: auto;
   margin: 0 auto;
@@ -186,4 +190,13 @@ h2 {
   content: "";
   display: block;
   clear: both;
+}
+
+.masonry-item {
+    width: 200px;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
 }
