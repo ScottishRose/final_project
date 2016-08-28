@@ -2,10 +2,10 @@
   max-width: 100%;
   height: auto;
   background-image: url("../images/header.jpg");
-}
+}*/
 
 h1 {
-  color: cornflowerblue;
+  color: #295E9F;
 }
 
 img {
@@ -13,9 +13,9 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
-  padding: 15px 0 ;
-}
 
+}
+/*
 footer {
   background-color: teal;
   color: white;
@@ -39,26 +39,44 @@ footer nav a:hover {
   content: "";
   display: block;
   clear: both;
-}
-*/
+}*/
 
-/*
-css from other file*/
+/*Blinking Cursor*/
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+/* css from other file*/
 
 * {
   margin: 0;
   padding: 0;
 }
-/*Thanks to this site for the background pattern: http://lea.verou.me/css3patterns/#houndstooth;*/
+
 body {
-    background:
-    linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, #DDDDE3 75%, #DDDDE3) 0 0,
-    linear-gradient(-45deg, #DDDDE3 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
-    linear-gradient(45deg, #DDDDE3 17%, transparent 17%, transparent 25%, #DDDDE3 25%, #DDDDE3 36%, transparent 36%, transparent 64%, #DDDDE3 64%, #DDDDE3 75%, transparent 75%, transparent 83%, #DDDDE3 83%) 1em 1em;
-    background-color: white;
-    background-size: 2em 2em;
+    background-color: lightgrey;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .hero {
   max-width: 100%;
@@ -69,18 +87,32 @@ body {
 }
 
 .hero img {
+  width: 325px;
+  height: auto;
   border: none;
+
+}
+
+.navBar {
+  padding-top: 15px;
 }
 
 #logo {
   width: 300px;
   border: none;
 }
+
+.element p{
+  color: #295E9F;
+  padding-top: 35px;
+  text-align: center;
+}
 p {
   color: teal;
   padding-top: 15px;
 }
 a {
+  font-weight: 400;
   text-decoration: none;
   color: #295E9F;
   padding-top: 15px;
@@ -102,6 +134,8 @@ a:hover {
   border: none;
 }
 #main p {
+  font-weight: 400;
+  font-size: 16px;
   width: 100%;
   float: right;
   text-align: left;
@@ -146,8 +180,8 @@ header img {
 .about {
   clear: both;
   color: #295E9F;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
 }
 footer {
   border-top: 2px solid teal;
@@ -165,6 +199,7 @@ footer a img:hover {
 h4 {
   color: #295E9F;
   padding: 10px;
+  font-weight: 400;
 }
 h2 {
   padding-bottom: 15px;
@@ -193,7 +228,11 @@ h2 {
 }
 
 .masonry-item {
-    width: 200px;
+    width: calc(33% - 38px);
+    border: solid 10px white;
+    float: left;
+    margin: 10px;
+    background-size: cover;
 }
 
 .masonry-item img {
